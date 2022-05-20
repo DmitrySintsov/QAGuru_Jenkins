@@ -1,0 +1,5 @@
+rootProject.name = 'Demoqa'
+include 'JUnit5'
+include '7_AllureReports'
+include '9_Selenide#1'
+
