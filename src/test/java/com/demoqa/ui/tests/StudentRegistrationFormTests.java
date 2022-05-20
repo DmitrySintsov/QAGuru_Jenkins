@@ -42,14 +42,6 @@ public class StudentRegistrationFormTests extends TestBase {
                             text(testStudent.getGender()),
                             text(testStudent.getHobbies().get(0)),
                             text(testStudent.getAddress()));
-
-            Allure.getLifecycle().addAttachment(
-                    "Исходники страницы",
-                    "text/html",
-                    "html",
-                    WebDriverRunner.getWebDriver().getPageSource().getBytes(StandardCharsets.UTF_8)
-            );
         });
-        Attachments.addVideo();
     }
 }
